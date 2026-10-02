@@ -1,69 +1,69 @@
-# Welcome to your Lovable project
+# Trade Crypto
 
-## Project info
+A modern crypto-trading landing page / dashboard UI built with React, Vite, TypeScript, shadcn-ui, and Tailwind CSS. Client-side only — no backend required.
 
-**URL**: https://lovable.dev/projects/92dc0c12-c831-4ed8-9ab7-0f875920f45d
+## Features
 
-## How can I edit this code?
+- Crypto-trading themed marketing site: hero, features, pricing, testimonials
+- Polished component library (shadcn-ui + Radix UI primitives)
+- Charts with Recharts, animations with Framer Motion
+- Dark-mode support via `next-themes`
+- Responsive layout, Tailwind-powered styling
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- React 18 + TypeScript
+- Vite 5 (build tool)
+- Tailwind CSS + shadcn-ui / Radix UI
+- React Router, TanStack Query, React Hook Form + Zod
+- Recharts, Framer Motion, Lucide icons
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/92dc0c12-c831-4ed8-9ab7-0f875920f45d) and start prompting.
+## Quick Start
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Requires Node.js (use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to install).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone the repository
+git clone https://github.com/girishlade111/Trade-crypto.git
+cd Trade-crypto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Install dependencies
+npm install --legacy-peer-deps
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 3. Start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open http://localhost:8080 in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+Trade-crypto/
+├── index.html            # Entry HTML (base path set for GitHub Pages)
+├── vite.config.ts        # Vite config (@ alias, production base path)
+├── src/
+│   ├── main.tsx          # App entry point
+│   ├── App.tsx           # Router + providers
+│   ├── pages/            # Route pages (Index)
+│   ├── components/       # UI sections + shadcn-ui components
+│   ├── hooks/, lib/, config/  # Helpers, utils, config
+├── public/               # Static assets
+└── dist/                 # Production build output (git-ignored; built output lives at repo root on main for Pages)
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deploy
 
-## What technologies are used for this project?
+Static site. The production build is committed at the repo root on `main` and served via GitHub Pages:
 
-This project is built with .
+https://girishlade111.github.io/Trade-crypto/
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+To rebuild: `npm run build`, copy `dist/*` to the repo root, commit, and push.
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/92dc0c12-c831-4ed8-9ab7-0f875920f45d) and click on Share -> Publish.
+Free to use and modify.
 
-## I want to use a custom domain - is that possible?
+---
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Built by [Girish Lade](https://ladestack.in) · More projects at [ladestack.in](https://ladestack.in)

@@ -13,6 +13,8 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === 'development' && componentTagger(),
   ].filter(Boolean),
+  // Production base path so built assets resolve under GitHub Pages project path
+  base: mode === 'production' ? '/Trade-crypto/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
